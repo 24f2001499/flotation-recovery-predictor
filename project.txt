@@ -1,0 +1,118 @@
+AI-Based Prediction and Optimization of Iron Ore Recovery in Froth Flotation Plant
+
+
+
+Best Project You Can Build from This Dataset
+🔷 Project Title
+
+AI-Based Prediction and Optimization of Iron Ore Recovery in Froth Flotation Plant
+
+🧠 What Makes This Dataset Powerful?
+
+From your description:
+
+Real plant data (March–Sept 2017)
+Input quality (columns 2–3)
+Control parameters (columns 4–22)
+Output (final ore quality)
+
+👉 This allows you to do 3 levels of project (very important):
+
+🚀 Level 1: Core ML Model (Must Do)
+🎯 Goal
+
+Predict:
+
+Final iron ore grade
+OR silica content
+🔧 Approach
+Regression problem
+Models:
+Linear Regression (baseline)
+Random Forest ✅ (recommended)
+XGBoost (optional, high marks)
+🔑 Key Insight
+
+Instead of using all columns blindly:
+
+👉 Divide features:
+
+Feed Quality → columns 2–3
+Control Variables → columns 4–22
+
+This helps in:
+
+Better explanation in viva
+Feature importance analysis
+🚀 Level 2: Feature Importance (High Scoring)
+🎯 Question
+
+Which parameter affects recovery the most?
+
+Use:
+
+Random Forest feature importance
+SHAP (optional, advanced)
+
+👉 Output:
+
+Air flow impact
+pH impact
+Column level impact
+
+This shows engineering understanding + ML
+
+🚀 Level 3: Optimization (VERY IMPORTANT 🚀)
+
+This is what makes your project unique
+
+🎯 Goal
+
+Find:
+👉 Best operating conditions for maximum recovery
+
+🔧 Method 1 (Simple)
+Try different combinations of:
+Air flow
+pH
+Level
+Predict output → choose best
+🔧 Method 2 (Advanced)
+
+Use:
+
+Grid Search
+OR Genetic Algorithm (optional for bonus marks)
+📊 What You Should Show in Demo
+Load dataset
+Train model
+Show prediction accuracy
+Show feature importance
+Show optimized parameters
+
+
+
+
+Data for: FlotationNet: A hierarchical deep learning network for froth flotation recovery prediction
+Published: 5 August 2020
+|
+Version 1
+|
+DOI:
+10.17632/2vsrjbtfp5.1
+Contributor:
+Yuanyuan Pu
+Description
+Data are from a manufacturing froth flotation plant. The first column shows time and date range (from march of 2017 until september of 2017).The second and third columns are quality measures of the iron ore pulp right before it is fed into the flotation plant. Column 4 until column 8 are the most important variables that impact in the ore quality in the end of the process. From column 9 until column 22, we can see process data (level and air flow inside the flotation columns, which also impact in ore quality. The last two columns are the final iron ore pulp quality measurement from the lab.
+
+Index(['% Iron Feed', '% Silica Feed', 'Starch Flow', 'Amina Flow',
+       'Ore Pulp Flow', 'Ore Pulp pH', 'Ore Pulp Density',
+       'Flotation Column 01 Air Flow', 'Flotation Column 02 Air Flow',
+       'Flotation Column 03 Air Flow', 'Flotation Column 04 Air Flow',
+       'Flotation Column 05 Air Flow', 'Flotation Column 06 Air Flow',
+       'Flotation Column 07 Air Flow', 'Flotation Column 01 Level',
+       'Flotation Column 02 Level', 'Flotation Column 03 Level',
+       'Flotation Column 04 Level', 'Flotation Column 05 Level',
+       'Flotation Column 06 Level', 'Flotation Column 07 Level',
+       '% Iron Concentrate', '% Silica Concentrate'],
+      dtype='object')
