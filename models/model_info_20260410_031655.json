@@ -1,0 +1,21 @@
+{
+    "timestamp": "20260410_031655",
+    "model_type": "Random Forest (Regularized)",
+    "features": 21,
+    "training_samples": 3158,
+    "test_samples": 790,
+    "performance": {
+        "train_r2": 0.5302925744099032,
+        "test_r2": 0.28779751456797253,
+        "rmse": 0.9189806530052266,
+        "mae": 0.7175985496661743,
+        "cv_mean_r2": 0.2591394107484068,
+        "cv_std_r2": 0.018771447136650656
+    },
+    "files": {
+        "linear_regression_model": "linear_regression_model_20260410_031655.pkl",
+        "random_forest_model": "random_forest_model_20260410_031655.pkl",
+        "scaler": "feature_scaler_20260410_031655.pkl",
+        "metadata": "model_metadata_20260410_031655.pkl"
+    }
+}
