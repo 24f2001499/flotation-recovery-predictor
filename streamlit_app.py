@@ -80,9 +80,13 @@ def load_model_and_scaler():
     return rf_model, scaler, metadata
 
 # ======================== HELPER FUNCTIONS ========================
-def make_prediction(input_data, scaler, model):
+def make_prediction(input_data, scaler, model, metadata):
     """Make prediction with uncertainty estimate"""
     try:
+        # Subset features to match training data order
+        if isinstance(input_data, pd.DataFrame):
+            input_data = input_data[metadata['all_features']]
+        
         # Scale input
         scaled_data = scaler.transform(input_data)
         
@@ -231,7 +235,7 @@ def main():
         
         # Predict
         if st.button("🔮 Make Prediction", use_container_width=True):
-            prediction, uncertainty, confidence_range = make_prediction(input_df, scaler, rf_model)
+            prediction, uncertainty, confidence_range = make_prediction(input_df, scaler, rf_model, metadata)
             
             if prediction is not None:
                 st.success("✅ Prediction Complete!")
