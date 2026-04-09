@@ -15,6 +15,7 @@
 ## 🎯 Deploy in 3 Simple Steps
 
 ### Step 1: Create GitHub Repo (2 min)
+
 ```
 1. Go to https://github.com/new
 2. Name: flotation-recovery-predictor
@@ -23,7 +24,9 @@
 ```
 
 ### Step 2: Upload Files (3 min)
+
 Upload everything in `d:\tanmay\Meta_project` to GitHub, including:
+
 - `streamlit_app.py` ✅
 - `requirements.txt` ✅
 - `models/` folder ✅
@@ -31,6 +34,7 @@ Upload everything in `d:\tanmay\Meta_project` to GitHub, including:
 - `README.md` ✅
 
 ### Step 3: Deploy (2 min)
+
 ```
 1. Go to https://share.streamlit.io/
 2. Choose repository
@@ -80,13 +84,16 @@ Upload everything in `d:\tanmay\Meta_project` to GitHub, including:
 ## 🎮 App Usage Examples
 
 ### Example 1: Single Prediction
+
 **User enters:**
+
 - pH: 10.0
 - Density: 1.75
 - Starch: 2500 mL/min
 - Amina: 450 mL/min
 
 **App shows:**
+
 ```
 Predicted Iron Concentrate: 65.49%
 Confidence Range: 64.57% - 66.41%
@@ -94,16 +101,20 @@ Status: 🟢 Excellent (above baseline)
 ```
 
 ### Example 2: Batch Upload
+
 **User uploads:** 24-hour operation data (CSV)
-**App returns:** 
+**App returns:**
+
 - Individual predictions
 - Statistics (mean, min, max)
 - Distribution chart
 - Downloadable results
 
 ### Example 3: Parameter Optimization
+
 **User selects:** "Explore pH effect"
 **App shows:**
+
 - Interactive Plotly chart
 - Recovery vs pH (8.5 to 10.5)
 - Optimal pH highlighted
@@ -138,17 +149,20 @@ streamlit run streamlit_app.py
 ## 🌐 After Deployment
 
 ### Your Public URL
+
 ```
 https://share.streamlit.io/YOUR_USERNAME/flotation-recovery-predictor
 ```
 
 ### Share With Team
+
 - Send the URL
 - No setup needed - just click!
 - Works on desktop, tablet, mobile
 - Available 24/7
 
 ### Monitor Usage
+
 - Streamlit Cloud shows analytics
 - Check app performance
 - View user activity
@@ -171,11 +185,13 @@ https://share.streamlit.io/YOUR_USERNAME/flotation-recovery-predictor
 ## 📊 Expected Performance
 
 **Local Testing:**
+
 - First load: 2-3 seconds (model caching)
 - Subsequent: <1 second
 - Prediction: <100ms
 
 **Streamlit Cloud:**
+
 - First load: 3-5 seconds
 - Single prediction: <1 second
 - Batch (100 samples): 2-3 seconds
@@ -199,9 +215,9 @@ https://share.streamlit.io/YOUR_USERNAME/flotation-recovery-predictor
 
 | Resource | URL |
 |----------|-----|
-| **GitHub** | https://github.com |
-| **Streamlit Cloud** | https://share.streamlit.io/ |
-| **Streamlit Docs** | https://docs.streamlit.io/ |
+| **GitHub** | <https://github.com> |
+| **Streamlit Cloud** | <https://share.streamlit.io/> |
+| **Streamlit Docs** | <https://docs.streamlit.io/> |
 | **Deployment Guide** | Read: STREAMLIT_DEPLOYMENT_GUIDE.md |
 | **Setup Details** | Read: STREAMLIT_SETUP_SUMMARY.md |
 
@@ -246,9 +262,10 @@ https://share.streamlit.io/YOUR_USERNAME/flotation-recovery-predictor
 
 ---
 
-## 🎉 You're Ready to Launch!
+## 🎉 You're Ready to Launch
 
-### Next Steps:
+### Next Steps
+
 1. **Read**: STREAMLIT_DEPLOYMENT_GUIDE.md (detailed steps)
 2. **Create**: GitHub account & repository
 3. **Upload**: All files to GitHub

@@ -33,24 +33,28 @@ Your project is now ready for Streamlit Cloud deployment! Here's what was set up
 ## 🎯 App Features
 
 ### 📊 Single Prediction
+
 - Interactive parameter input (21 features)
 - Real-time predictions with uncertainty
 - Color-coded results
 - Confidence intervals
 
 ### 📈 Batch Analysis
+
 - CSV file upload
 - Process 100s of predictions
 - Statistical summary
 - Download results
 
 ### 🔧 Parameter Optimization
+
 - Sensitivity analysis
 - Interactive parameter exploration
 - Find optimal configurations
 - Beautiful Plotly charts
 
 ### ℹ️ Model Information
+
 - Performance metrics
 - Feature descriptions
 - Deployment details
@@ -61,21 +65,25 @@ Your project is now ready for Streamlit Cloud deployment! Here's what was set up
 ## 🚀 Quick Start (3 Steps)
 
 ### Step 1: Test Locally
+
 ```bash
 cd d:\tanmay\Meta_project
 pip install -r requirements.txt
 streamlit run streamlit_app.py
 ```
+
 Opens at: `http://localhost:8501`
 
 ### Step 2: Create GitHub Account & Repo
-- Go to https://github.com/new
+
+- Go to <https://github.com/new>
 - Name it: `flotation-recovery-predictor`
 - Make it PUBLIC
 - Upload files (or use git push)
 
 ### Step 3: Deploy to Streamlit Cloud
-- Go to https://share.streamlit.io/
+
+- Go to <https://share.streamlit.io/>
 - Sign in with GitHub
 - Click "New app"
 - Select your repo
@@ -109,37 +117,48 @@ flotation-recovery-predictor/
 ## ⚡ App Features Explained
 
 ### 1️⃣ **Single Prediction Mode**
+
 **What it does:**
+
 - User enters 21 process parameters
 - Model predicts iron concentrate %
 - Shows confidence interval ±0.92%
 
 **Use case:**
+
 - Plant operators want to know: "If I set pH to 10.0, what recovery can I expect?"
 - Answer: ~65.49% ± 0.92%
 
 ### 2️⃣ **Batch Analysis Mode**
+
 **What it does:**
+
 - Upload CSV with multiple samples
 - Gets predictions for all rows
 - Shows statistics & visualization
 
 **Use case:**
+
 - Analysis team: "Predict recovery for yesterday's 24-hour operation"
 - App: Processes 24 samples, shows trends
 
 ### 3️⃣ **Parameter Optimization Mode**
+
 **What it does:**
+
 - Vary one parameter, keep others constant
 - Show effect on predictions
 - Interactive Plotly chart
 
 **Use case:**
+
 - Operator: "How does pH affect recovery at current conditions?"
 - Answer: Chart showing pH 8.5-10.5 → recovery curves
 
 ### 4️⃣ **Model Information Mode**
+
 **What it does:**
+
 - Show model metrics (R², RMSE, etc)
 - List all features
 - Display best practices
@@ -149,6 +168,7 @@ flotation-recovery-predictor/
 ## 🔑 Key Configuration
 
 ### Streamlit Config (.streamlit/config.toml)
+
 ```toml
 [theme]
 primaryColor = "#1f77b4"        # Blue
@@ -157,6 +177,7 @@ secondaryBackgroundColor = "#f0f2f6"  # Light gray
 ```
 
 ### Requirements
+
 ```
 streamlit==1.28.1       # Web framework
 pandas==2.1.3           # Data processing
@@ -171,21 +192,25 @@ plotly==5.18.0          # Charts
 ## 🎨 UI/UX Highlights
 
 ✨ **Professional Design**
+
 - Clean, modern interface
 - Responsive layout (works on mobile too!)
 - Color-coded prediction results
 
 🚀 **Performance**
+
 - Fast model loading (<1s)
 - Model caching for speed
 - Handles large batch files
 
 📱 **Mobile Friendly**
+
 - Works on phones/tablets
 - Responsive sliders
 - Touch-friendly buttons
 
 🌙 **Dark Mode Support**
+
 - Streamlit auto theme detection
 - Works in light & dark modes
 
@@ -216,13 +241,15 @@ plotly==5.18.0          # Charts
 
 ## 🔄 Update Workflow
 
-### When you retrain the model:
+### When you retrain the model
+
 1. Run training notebook
 2. New models saved to `models/`
 3. Upload `.pkl` files to GitHub
 4. Streamlit auto-reloads (~2 min)
 
-### When you update the app:
+### When you update the app
+
 1. Edit `streamlit_app.py`
 2. Push to GitHub
 3. Streamlit auto-redeploys (~1-2 min)
@@ -241,19 +268,19 @@ plotly==5.18.0          # Charts
 | **GitHub auth fails** | Check GitHub account public |
 | **App won't deploy** | Check repository is PUBLIC |
 
-**Streamlit Docs**: https://docs.streamlit.io/
-**Community Cloud Docs**: https://docs.streamlit.io/streamlit_community_cloud
+**Streamlit Docs**: <https://docs.streamlit.io/>
+**Community Cloud Docs**: <https://docs.streamlit.io/streamlit_community_cloud>
 
 ---
 
 ## ✅ Deployment Checklist
 
 - [ ] **Local Test**: Run `streamlit run streamlit_app.py`
-- [ ] **GitHub Account**: Create at https://github.com
+- [ ] **GitHub Account**: Create at <https://github.com>
 - [ ] **GitHub Repo**: Create public repository
 - [ ] **Upload Files**: All files above to GitHub
 - [ ] **Models Present**: `models/` folder with `.pkl` files
-- [ ] **Streamlit Account**: Sign up at https://share.streamlit.io/
+- [ ] **Streamlit Account**: Sign up at <https://share.streamlit.io/>
 - [ ] **Deploy**: Click "New app" and select repo
 - [ ] **Test**: Click URL when deployment complete
 - [ ] **Share**: Copy URL and share with team!

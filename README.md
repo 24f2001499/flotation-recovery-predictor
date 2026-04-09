@@ -18,7 +18,7 @@ This project provides a production-ready machine learning solution for predictin
 
 ## 🌐 Live Demo
 
-**🚀 Access the app here**: https://share.streamlit.io/YOUR_USERNAME/flotation-recovery-predictor
+**🚀 Access the app here**: <https://share.streamlit.io/YOUR_USERNAME/flotation-recovery-predictor>
 
 (Replace `YOUR_USERNAME` with your actual GitHub username after deployment)
 
@@ -38,6 +38,7 @@ This project provides a production-ready machine learning solution for predictin
 | **Features** | 21 parameters |
 
 ### Model Accuracy
+
 - **Real-world accuracy:**±0.92% typical error
 - **Confidence range**: ±1.8% (95% CI)
 - **Use case**: Decision support + expert judgment
@@ -68,6 +69,7 @@ flotation-recovery-predictor/
 ## 🚀 Quick Start
 
 ### Option 1: Use Live App (Easiest)
+
 1. Click the link above
 2. Select prediction mode from sidebar
 3. Enter parameters
@@ -94,11 +96,13 @@ App opens at: `http://localhost:8501`
 ## 📋 Using the App
 
 ### 🎯 Single Prediction Mode
+
 - Enter process parameters using interactive sliders
 - Get instant prediction with confidence interval
 - See color-coded result (excellent/good/suboptimal)
 
 **Example:**
+
 ```
 pH: 10.0
 Density: 1.75
@@ -110,12 +114,14 @@ Confidence Range: 64.57% - 66.41%
 ```
 
 ### 📈 Batch Analysis Mode
+
 - Upload CSV with multiple samples
 - Get predictions for all samples
 - Download results
 - See statistical summary
 
 **CSV Format Example:**
+
 ```
 % Iron Feed,% Silica Feed,Ore Pulp pH,Ore Pulp Density,...
 67.5,2.1,10.0,1.75,...
@@ -124,12 +130,14 @@ Confidence Range: 64.57% - 66.41%
 ```
 
 ### 🔧 Parameter Optimization Mode
+
 - Select a parameter to vary
 - See how it affects recovery
 - Find optimal values
 - Interactive sensitivity analysis
 
 ### ℹ️ Model Information
+
 - View detailed model metrics
 - See feature descriptions
 - Read deployment info
@@ -142,10 +150,12 @@ Confidence Range: 64.57% - 66.41%
 ### Features (21 total)
 
 **Feed Quality (2):**
+
 - % Iron Feed
 - % Silica Feed
 
 **Process Control (19):**
+
 - Ore Pulp pH
 - Ore Pulp Density
 - Ore Pulp Flow
@@ -155,6 +165,7 @@ Confidence Range: 64.57% - 66.41%
 - Flotation Column 01-07 Level (7)
 
 ### Model Architecture
+
 - **Algorithm**: Random Forest Regressor
 - **Trees**: 100
 - **Max Depth**: 8 (regularized)
@@ -162,6 +173,7 @@ Confidence Range: 64.57% - 66.41%
 - **Min Samples Leaf**: 4
 
 ### Training Data
+
 - **Total Samples**: 3,948 (after NaN removal)
 - **Training**: 3,158 samples (80%)
 - **Testing**: 790 samples (20%)
@@ -173,6 +185,7 @@ Confidence Range: 64.57% - 66.41%
 ## ⚠️ Important Notes
 
 ### Model Limitations
+
 - ✅ Explains ~29% of variance
 - ❌ 71% influenced by unmeasured factors
 - ✅ Typical error: ±0.92%
@@ -180,12 +193,14 @@ Confidence Range: 64.57% - 66.41%
 - ⚠️ Always validate with expert judgment
 
 ### When to Retrain
+
 - 📅 Monthly: Check actual vs predicted
 - 🔄 Quarterly: Retrain with new data
 - 🚨 When: Process changes significantly
 - 📊 If: Predictions diverge from reality
 
 ### Best Practices
+
 1. ✅ Start with recommended parameters as baseline
 2. ✅ Test in controlled trials first
 3. ✅ Monitor actual recovery vs predictions
@@ -199,6 +214,7 @@ Confidence Range: 64.57% - 66.41%
 See [STREAMLIT_DEPLOYMENT_GUIDE.md](./STREAMLIT_DEPLOYMENT_GUIDE.md) for complete deployment guide.
 
 **Quick Summary:**
+
 1. Create GitHub account
 2. Upload files to GitHub
 3. Connect to Streamlit Cloud
@@ -221,6 +237,7 @@ See [STREAMLIT_DEPLOYMENT_GUIDE.md](./STREAMLIT_DEPLOYMENT_GUIDE.md) for complet
 ## 📊 Model Training
 
 The model was trained using:
+
 - **Data Source**: Industrial flotation plant records (1,048,575 hourly measurements)
 - **Clean Data**: 3,948 complete records
 - **Validation**: 5-fold cross-validation
@@ -246,6 +263,7 @@ See notebook for complete training pipeline.
 ## 📝 Citation
 
 If you use this project, please cite:
+
 ```
 Flotation Recovery Predictor
 Version 1.0 (April 2026)
@@ -258,9 +276,9 @@ Dataset: 3,948 plant records | Features: 21 | Algorithm: Random Forest
 ## 📞 Support & Contact
 
 - **Issues**: GitHub Issues
-- **Streamlit Docs**: https://docs.streamlit.io/
-- **Streamlit Cloud**: https://share.streamlit.io/
-- **GitHub**: https://github.com/
+- **Streamlit Docs**: <https://docs.streamlit.io/>
+- **Streamlit Cloud**: <https://share.streamlit.io/>
+- **GitHub**: <https://github.com/>
 
 ---
 
@@ -284,7 +302,9 @@ MIT License - Feel free to use and modify for your needs
 ---
 
 ### Last Updated
+
 April 10, 2026
 
 ### Version
+
 1.0 - Initial Release

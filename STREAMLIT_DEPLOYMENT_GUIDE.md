@@ -4,15 +4,16 @@
 
 ### Step 1: Prepare GitHub Repository
 
-1. **Create a GitHub account** (if you don't have one): https://github.com
-2. **Create a new repository**: 
-   - Go to https://github.com/new
+1. **Create a GitHub account** (if you don't have one): <https://github.com>
+2. **Create a new repository**:
+   - Go to <https://github.com/new>
    - Name it: `flotation-recovery-predictor`
    - Make it **PUBLIC** (for Streamlit Cloud)
    - Check "Add a README file"
    - Click "Create repository"
 
 3. **Upload files to GitHub**:
+
    ```bash
    cd d:\tanmay\Meta_project
    git init
@@ -34,7 +35,7 @@
 
 ### Step 2: Deploy to Streamlit Cloud
 
-1. **Go to Streamlit Cloud**: https://share.streamlit.io/
+1. **Go to Streamlit Cloud**: <https://share.streamlit.io/>
 2. **Sign in with GitHub** (creates account automatically)
 3. **Click "New app"** button
 4. **Fill deployment form**:
@@ -75,10 +76,11 @@ Before deploying, make sure you have:
 ✅ **requirements.txt** - Python dependencies  
 ✅ **.streamlit/config.toml** - Configuration (optional but recommended)
 ✅ **models/** directory with:
-   - `random_forest_model_*.pkl`
-   - `feature_scaler_*.pkl`
-   - `model_metadata_*.pkl`
-   - `model_info_*.json`
+
+- `random_forest_model_*.pkl`
+- `feature_scaler_*.pkl`
+- `model_metadata_*.pkl`
+- `model_info_*.json`
 ✅ **README.md** - Project description
 ✅ **.gitignore** - (Optional) Exclude large files
 
@@ -87,6 +89,7 @@ Before deploying, make sure you have:
 ## Dependencies
 
 The `requirements.txt` includes:
+
 ```
 streamlit==1.28.1        # Web framework
 pandas==2.1.3            # Data manipulation
@@ -103,24 +106,28 @@ seaborn==0.13.0          # Statistical visualization
 ## 🎯 Features of the Streamlit App
 
 ### 📊 Single Prediction Mode
+
 - Interactive sliders for all 21 features
 - Real-time predictions with uncertainty estimates
 - Color-coded result (excellent/good/below baseline)
 - Confidence ranges
 
 ### 📈 Batch Analysis Mode
+
 - Upload CSV files with multiple samples
 - Process 100s of predictions at once
 - Statistical summary (mean, min, max, std)
 - Download results as CSV
 
 ### 🔧 Parameter Optimization Mode
+
 - Explore how parameters affect predictions
 - Interactive parameter sensitivity analysis
 - Visualize optimization curves
 - Find optimal operating conditions
 
 ### ℹ️ Model Information Mode
+
 - Model performance metrics
 - Feature importance information
 - Dataset statistics
@@ -130,7 +137,7 @@ seaborn==0.13.0          # Statistical visualization
 
 ## 🚀 Local Testing (Before Deployment)
 
-### Test locally first:
+### Test locally first
 
 ```bash
 # Install dependencies
@@ -143,6 +150,7 @@ streamlit run streamlit_app.py
 The app will open at: `http://localhost:8501`
 
 **Browser should display:**
+
 1. Header: "⛏️ Froth Flotation Recovery Predictor"
 2. Sidebar with navigation modes
 3. Model info card showing it's loaded ✅
@@ -152,18 +160,23 @@ The app will open at: `http://localhost:8501`
 ## 🔧 Troubleshooting
 
 ### Issue: "Models directory not found"
+
 **Solution**: Upload `models/` folder to GitHub with all `.pkl` files
 
 ### Issue: "Module not found" (streamlit, pandas, etc)
+
 **Solution**: Ensure `requirements.txt` is in repository root with correct versions
 
 ### Issue: App takes 30+ seconds to load
+
 **Solution**: Model loading is cached (`@st.cache_resource`), first load is slowest
 
 ### Issue: "No module named X"
+
 **Solution**: Add package to `requirements.txt` and redeploy
 
 ### Issue: Deployment fails with "memory exceeded"
+
 **Solution**: Streamlit Cloud provides 1GB RAM - should be sufficient. Check for file size limits.
 
 ---
@@ -192,7 +205,8 @@ The app will open at: `http://localhost:8501`
 
 ## 💡 How to Update the App
 
-### After updating streamlit_app.py:
+### After updating streamlit_app.py
+
 ```bash
 git add streamlit_app.py
 git commit -m "Update: New feature added"
@@ -201,7 +215,8 @@ git push origin main
 
 Streamlit Cloud auto-detects changes and redeploys in 1-2 minutes! 🚀
 
-### After retraining the model:
+### After retraining the model
+
 1. Run training notebook to generate new models
 2. Save models to `models/` directory
 3. Upload `.pkl` files to GitHub
@@ -211,10 +226,10 @@ Streamlit Cloud auto-detects changes and redeploys in 1-2 minutes! 🚀
 
 ## 📞 Support & Resources
 
-- **Streamlit Docs**: https://docs.streamlit.io/
-- **Streamlit Cloud Docs**: https://docs.streamlit.io/streamlit_community_cloud/get_started
-- **Deploy Guide**: https://docs.streamlit.io/streamlit_community_cloud/deploy_your_app
-- **GitHub Desktop**: https://desktop.github.com/ (easier than command line)
+- **Streamlit Docs**: <https://docs.streamlit.io/>
+- **Streamlit Cloud Docs**: <https://docs.streamlit.io/streamlit_community_cloud/get_started>
+- **Deploy Guide**: <https://docs.streamlit.io/streamlit_community_cloud/deploy_your_app>
+- **GitHub Desktop**: <https://desktop.github.com/> (easier than command line)
 
 ---
 
