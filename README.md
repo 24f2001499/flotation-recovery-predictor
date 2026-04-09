@@ -18,7 +18,7 @@ This project provides a production-ready machine learning solution for predictin
 
 ## 🌐 Live Demo
 
-**🚀 Access the app here**: <https://share.streamlit.io/YOUR_USERNAME/flotation-recovery-predictor>
+**🚀 Access the app here**: <https://flotation-recovery-predictor-zqghhtovnz7eppw9fnggh3.streamlit.app/>
 
 (Replace `YOUR_USERNAME` with your actual GitHub username after deployment)
 
@@ -79,7 +79,7 @@ flotation-recovery-predictor/
 
 ```bash
 # Clone repository
-git clone https://github.com/YOUR_USERNAME/flotation-recovery-predictor.git
+git clone https://github.com/24f2001499/flotation-recovery-predictor
 cd flotation-recovery-predictor
 
 # Install dependencies
