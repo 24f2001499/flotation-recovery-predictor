@@ -1,0 +1,25 @@
+{
+  "model_type": "Random Forest Regressor",
+  "hyperparameters": {
+    "n_estimators": 100,
+    "max_depth": 8,
+    "min_samples_split": 10,
+    "min_samples_leaf": 4,
+    "random_state": 42
+  },
+  "performance": {
+    "train_r2": 0.5303,
+    "test_r2": 0.2878,
+    "rmse": 0.918981,
+    "mae": 0.717599,
+    "cv_mean_r2": 0.2591,
+    "cv_std_r2": 0.0188
+  },
+  "data": {
+    "features": 21,
+    "training_samples": 3158,
+    "test_samples": 790
+  },
+  "saved_timestamp": "20260410_024612",
+  "sklearn_version": "1.3.2"
+}
